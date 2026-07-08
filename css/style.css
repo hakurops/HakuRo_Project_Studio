@@ -295,3 +295,37 @@ header h1{
     color:#56785c;
 
 }
+
+/* -------------------------
+   Navigation
+------------------------- */
+
+nav{
+
+    background:#ffffff;
+
+    padding:15px;
+
+    text-align:center;
+
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+
+}
+
+nav a{
+
+    margin:0 12px;
+
+    text-decoration:none;
+
+    color:#4c7c53;
+
+    font-weight:bold;
+
+}
+
+nav a:hover{
+
+    color:#7ca982;
+
+}

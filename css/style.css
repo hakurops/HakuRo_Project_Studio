@@ -249,3 +249,49 @@ header h1{
 }
 
 }
+
+/* -------------------------
+   App Page
+------------------------- */
+
+.app-icon{
+
+    width:140px;
+
+    height:140px;
+
+    margin:0 auto 25px;
+
+    border-radius:30px;
+
+    background:#dfe8dc;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#56785c;
+
+    font-weight:bold;
+
+}
+
+.app-image{
+
+    height:240px;
+
+    border-radius:18px;
+
+    background:#eef3ea;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#56785c;
+
+}

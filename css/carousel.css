@@ -4,11 +4,9 @@
 
 .carousel{
 
-    width:100%;
+    max-width:340px;
 
-    max-width:420px;
-
-    margin:0 auto;
+    margin:30px auto;
 
 }
 
@@ -18,9 +16,9 @@
 
     overflow:hidden;
 
-    border-radius:20px;
+    border-radius:18px;
 
-    box-shadow:0 8px 20px rgba(0,0,0,.15);
+    box-shadow:0 6px 16px rgba(0,0,0,.15);
 
 }
 
@@ -28,19 +26,19 @@
 
     display:flex;
 
-    gap:0;
+    transition:transform .35s ease;
 
 }
 
 .carousel-track img{
 
-    width:100%;
+    width:340px;
 
-    flex-shrink:0;
+    height:auto;
+
+    flex:0 0 340px;
 
     display:block;
-
-    border-radius:20px;
 
 }
 
@@ -70,7 +68,7 @@
 
     background:#5f8966;
 
-    color:white;
+    color:#fff;
 
     font-size:22px;
 
@@ -102,9 +100,11 @@
 
     border-radius:50%;
 
-    background:#c8c8c8;
+    background:#cccccc;
 
-    transition:.25s;
+    cursor:pointer;
+
+    transition:.2s;
 
 }
 

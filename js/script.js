@@ -69,30 +69,36 @@ document.querySelectorAll(".carousel").forEach((carousel) => {
     // --------------------
 
     let startX = 0;
+let startY = 0;
 
-    track.addEventListener("touchstart",(e)=>{
+track.addEventListener("touchstart", (e) => {
 
-        startX = e.touches[0].clientX;
+    startX = e.touches[0].clientX;
+    startY = e.touches[0].clientY;
 
-    });
+});
 
-    track.addEventListener("touchend",(e)=>{
+track.addEventListener("touchend", (e) => {
 
-        const diff = e.changedTouches[0].clientX - startX;
+    const diffX = e.changedTouches[0].clientX - startX;
+    const diffY = e.changedTouches[0].clientY - startY;
 
-        if(Math.abs(diff) < 50) return;
+    // 縦移動の方が大きければ何もしない
+    if (Math.abs(diffY) > Math.abs(diffX)) return;
 
-        if(diff < 0){
+    if (Math.abs(diffX) < 25) return;
 
-            nextSlide();
+    if (diffX < 0) {
 
-        }else{
+        nextSlide();
 
-            prevSlide();
+    } else {
 
-        }
+        prevSlide();
 
-    });
+    }
+
+});
 
     window.addEventListener("resize",update);
 

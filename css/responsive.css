@@ -2,13 +2,71 @@
    Responsive
 ========================== */
 
-@media (max-width:700px){
+/* ---------- Tablet ---------- */
 
-    /* Header */
+@media (max-width:1000px){
 
     header{
 
-        padding:45px 20px;
+        padding:50px 20px;
+
+    }
+
+    .hero{
+
+        padding:50px 25px;
+
+    }
+
+    .grid{
+
+        grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    }
+
+    .app-grid{
+
+        grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    }
+
+    .app-detail-header{
+
+        gap:18px;
+
+    }
+
+    /* Carousel */
+
+    .carousel{
+
+        max-width:320px;
+
+    }
+
+    .carousel-window{
+
+        width:320px;
+
+    }
+
+    .carousel-track img{
+
+        width:320px;
+
+        min-width:320px;
+
+    }
+
+}
+
+/* ---------- Smartphone ---------- */
+
+@media (max-width:700px){
+
+    header{
+
+        padding:40px 20px;
 
     }
 
@@ -24,11 +82,9 @@
 
     }
 
-    /* Hero */
-
     .hero{
 
-        padding:40px 20px;
+        padding:35px 20px;
 
     }
 
@@ -37,8 +93,6 @@
         font-size:1.8rem;
 
     }
-
-    /* Grid */
 
     .grid{
 
@@ -52,7 +106,13 @@
 
     }
 
-    /* App Detail */
+    .app-card{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
 
     .app-detail-header{
 
@@ -62,35 +122,7 @@
 
     }
 
-    .app-card{
-
-        flex-direction:column;
-
-        text-align:center;
-
-    }
-
     /* Carousel */
-
-    .carousel{
-
-        gap:8px;
-
-    }
-
-    .carousel-track img{
-
-        width:180px;
-
-    }
-
-}
-
-/* ==========================
-   Carousel Responsive
-========================== */
-
-@media (max-width:700px){
 
     .carousel{
 
@@ -135,30 +167,6 @@
         width:9px;
 
         height:9px;
-
-    }
-
-}
-
-@media (max-width:1000px){
-
-    .carousel{
-
-        max-width:320px;
-
-    }
-
-    .carousel-window{
-
-        width:320px;
-
-    }
-
-    .carousel-track img{
-
-        width:320px;
-
-        min-width:320px;
 
     }
 
